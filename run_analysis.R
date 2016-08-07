@@ -1,3 +1,11 @@
+if (!require("data.table")) {
+  install.packages("data.table")
+  require("data.table")
+}
+if (!require("reshape2")) {
+  install.packages("reshape2")
+  require("reshape2")
+}
 
 # Download the file, put the file in the data folder and unzip it in the "UCI HAR Dataset" folder
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
